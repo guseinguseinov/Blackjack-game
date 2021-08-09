@@ -1,5 +1,6 @@
 from blackjack_art import logo
 import random
+import subprocess
 
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 user_cards = []
@@ -86,6 +87,7 @@ play()
 while True:
     play_again = input("Type 'Y' to play again, type 'N' to end the game:").lower()
     if play_again == "y":
+        subprocess.call("clear", shell=True)
         play()
     else:
         print("Thank you for the game")
