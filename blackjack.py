@@ -21,7 +21,7 @@ def remove_all(a_list):
 
 
 def play():
-
+    subprocess.call("clear", shell=True)
     user_cards.append(deal_card())
     user_cards.append(deal_card())
     computer_cards.append(deal_card())
